@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/GannonSun/Vuepress_Blog#readme",
   "devDependencies": {
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.0",
+    "vuepress-theme-reco": "^1.6.1"
   }
 }
