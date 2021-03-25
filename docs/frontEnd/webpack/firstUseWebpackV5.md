@@ -34,3 +34,4 @@ new CopyWebpackPlugin({
 ### unable to locate '/Users/gannonsun/MyCodeLife/React/webpack_react/webpack_react_v1/static/\*_/_' glob
 
 原因是因为 static 里没有文件，随便新建一个图标就可以了
+
