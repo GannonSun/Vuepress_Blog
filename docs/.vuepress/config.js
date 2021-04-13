@@ -1,7 +1,8 @@
 const sidebar = require("./siders/index");
 
 module.exports = {
-  base: "/Vuepress_Blog/",
+  // base: "/Vuepress_Blog/",
+  base: "/",
   port: 8088,
   head: [
     [
