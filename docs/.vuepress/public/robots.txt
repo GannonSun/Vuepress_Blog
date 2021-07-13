@@ -1,0 +1,3 @@
+Sitemap: https://gannonsun.ltd/sitemap.xml
+
+User-agent: *

@@ -1,4 +1,10 @@
 const sidebar = require("./siders/index");
+const autometa_options = {
+  site: {
+    name: "Gannon Sun",
+  },
+  canonical_base: "https://gannonsun.ltd",
+};
 
 module.exports = {
   // base: "/Vuepress_Blog/",
@@ -17,6 +23,20 @@ module.exports = {
       {
         name: "viewport",
         content: "width=device-width,initial-scale=1,user-scalable=no",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "baidu-site-verification",
+        content: "code-2ND6rcHAOA",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content: "舒心的避风港,孙港年,前端,react,vue,git,antd",
       },
     ],
   ],
@@ -39,7 +59,17 @@ module.exports = {
       {
         text: "大前端",
         icon: "reco-blog",
-        items: [{ text: "Webpack", link: "/frontEnd/webpack/" }],
+        items: [
+          { text: "Css", link: "/frontEnd/css/" },
+          { text: "JavaScript", link: "/frontEnd/js/" },
+          { text: "Typescript", link: "/frontEnd/typescript/" },
+          { text: "Webpack", link: "/frontEnd/webpack/" },
+          { text: "Antd", link: "/frontEnd/antd/" },
+          { text: "GIS", link: "/frontEnd/gis/" },
+          { text: "Git", link: "/frontEnd/git/" },
+          { text: "Vue", link: "/frontEnd/vue/" },
+          { text: "Interview", link: "/frontEnd/interview/" },
+        ],
       },
     ],
     blogConfig: {
@@ -49,4 +79,16 @@ module.exports = {
       ],
     },
   },
+  plugins: [
+    ["autometa", autometa_options],
+    [
+      "sitemap",
+      {
+        hostname: "https://gannonsun.ltd",
+        // 排除无实际内容的页面
+        exclude: ["/404.html"],
+      },
+    ],
+    ["vuepress-plugin-baidu-autopush"],
+  ],
 };
